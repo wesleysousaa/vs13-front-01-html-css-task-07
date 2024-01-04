@@ -75,7 +75,10 @@
 
   .introduction a {
     font-size: 0.8rem;
+  }
 
+  .custom-navbar a {
+    font-size: 0.75rem;
   }
 }
 
