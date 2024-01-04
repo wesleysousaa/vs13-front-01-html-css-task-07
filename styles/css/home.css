@@ -16,7 +16,7 @@ main {
   height: 0.3rem;
 }
 .hot-complaints::-webkit-scrollbar-thumb {
-  background-color: var(--secondary);
+  background-color: #277340;
   border-radius: 1rem;
   margin: 2px;
 }
@@ -65,7 +65,7 @@ main {
   font-weight: bold;
 }
 .custom-card .people .people-desc span {
-  color: var(--secondary);
+  color: #277340;
 }
 
 .img-card {
@@ -84,7 +84,7 @@ main {
 .card-category {
   padding: 0.5rem;
   border-radius: 10px;
-  color: var(--white-text);
+  color: #ffffff;
 }
 
 section {
