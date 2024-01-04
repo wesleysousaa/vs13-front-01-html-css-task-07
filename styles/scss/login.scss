@@ -12,8 +12,14 @@ main {
     align-items: center;
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 5rem;
         font-weight: 700;
+
+        @media screen {
+            @media (max-width: 1700px) {
+                font-size: 3.5rem;
+            }
+        }
     }
 
     h1, a {
@@ -22,15 +28,36 @@ main {
 
     h2 {
         margin-top: 10px;
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: 500;
+
+        @media screen {
+            @media (max-width: 1700px) {
+                font-size: 2.4rem;
+            }
+        }
     }
 
     .form-container {
         margin: 15px 0 10px 0;
+
         .custom-input {
-            width: 16rem;
-            padding: 0.4rem 1rem;
+            width: 40rem;
+            padding: 1rem 1.8rem;
+            font-size: 1.3rem;
+
+            @media screen {
+                @media (max-width: 1700px) {
+                    width: 30rem;
+                    padding: 0.6rem 1.2rem;
+                    font-size: 1rem;
+                }
+
+                @media (max-width: 620px) {
+                    width: 16rem;
+                    padding: 0.4rem 1rem;
+                }
+            }
         }
 
         .custom-input::placeholder {
@@ -44,17 +71,31 @@ main {
     }
 
     button {
-        width: 16rem;
+        width: 20rem;
         border: none;
         background-color: $primary;
         color: $white-text;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 500;
-        padding: 0.4rem 0;
+        padding: 0.8rem 0;
         border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+
+        @media screen {
+            @media (max-width: 1700px) {
+                width: 16rem;
+                padding: 0.6rem 0;
+                font-size: 1.1rem;
+            }
+
+            @media (max-width: 620px) {
+                padding: 0.4rem 0;
+                font-size: 1.1rem;
+            }
+        }
     }
 }
+
