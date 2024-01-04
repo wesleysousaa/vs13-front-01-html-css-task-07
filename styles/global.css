@@ -15,3 +15,31 @@
 body {
   background-color: var(--background);
 }
+
+.custom-nav {
+  background-color: var(--primary);
+}
+
+.custom-nav .custom-logo {
+  color: var(--white-text);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.custom-nav .custom-burger-buttom {
+  color: var(--white-text);
+  border-color: var(--white-text);
+}
+
+.custom-burger-buttom i {
+  width: 100px;
+}
+
+footer {
+  background-color: var(--secondary);
+  color: var(--white-text);
+  border-top: 1px solid rgba(0, 0, 0, 0.127);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.127);
+}
