@@ -29,14 +29,13 @@
   <body>
     <header>
       <nav class="navbar custom-nav">
-        <div class="container-fluid">
+        <div class="menu">
           <a class="navbar-brand custom-logo" href="#">NOTIFICA</a>
-
           <nav class="custom-navbar" id="nav-light">
-            <a href="#introduction" class="btn btn-outline-light">Introdução</a>
-            <a href="#about" class="btn btn-outline-light">Sobre a ODS 6</a>
-            <a href="#features" class="btn btn-outline-light">Funcionalidades</a>
-            <a href="#" class="btn btn-outline-light active">Acessar</a>
+            <a href="#introduction" class="btn">Introdução</a>
+            <a href="#about" class="btn">Sobre a ODS 6</a>
+            <a href="#features" class="btn">Funcionalidades</a>
+            <a href="#" class="btn btn-outline-light">Acessar</a>
           </nav>
 
           <button
@@ -104,58 +103,89 @@
 
     <main>
       <section id="introduction" class="introduction">
-        <h1>Relate, Contribua, Transforme.</h1>
-        <p>
-          Seja parte da mudança: Junte-se a nós na melhoria do abastecimento de
-          água e saneamento em sua comunidade. Relate problemas em tempo real,
-          contribua para soluções eficazes e transforme positivamente o ambiente
-          ao seu redor.
-        </p>
-        <a type="button" href="#about" class="btn btn-outline-light"
-          >Explorar</a
-        >
+        <div class="description">
+          <h1>Relate, Contribua, Transforme.</h1>
+          <p>
+            Seja parte da mudança: Junte-se a nós na melhoria do abastecimento
+            de água e saneamento em sua comunidade. Relate problemas em tempo
+            real, contribua para soluções eficazes e transforme positivamente o
+            ambiente ao seu redor.
+          </p>
+          <a type="button" href="#about" class="btn btn-outline-light"
+            >Explorar</a
+          >
+        </div>
       </section>
       <section id="about" class="about">
-        <h2>Água Potável e Saneamento</h2>
+        <div class="description">
+          <h2>Água Potável e Saneamento</h2>
+          <p>
+            A ODS 6 dos Objetivos de Desenvolvimento Sustentável visa garantir a
+            disponibilidade e gestão sustentável da água e saneamento para todos
+            até 2030. O desafio reside na persistente falta de acesso a serviços
+            essenciais de água potável e saneamento em várias partes do mundo.
+            Fatores como a escassez de recursos hídricos, a poluição, a
+            inadequada infraestrutura e as disparidades socioeconômicas
+            contribuem para a complexidade do problema. Essa situação impacta
+            negativamente a saúde, o bem-estar e o desenvolvimento sustentável
+            das comunidades. Superar esses obstáculos requer esforços conjuntos,
+            investimentos significativos e inovações para garantir que todos
+            possam desfrutar de condições de vida dignas e saudáveis.
+          </p>
+
+          <div class="statistics">
+            <div class="card custom-card">
+              <h2>2 BI</h2>
+              <p>
+                De pessoas em todo o mundo enfrentam escassez de água potável.
+              </p>
+            </div>
+            <div class="card custom-card">
+              <h2>46%</h2>
+              <p>Das casas no Brasil têm problemas de saneamento.</p>
+            </div>
+            <div class="card custom-card">
+              <h2>273 mil</h2>
+              <p>Internações por falta de saneamento básico</p>
+            </div>
+          </div>
+        </div>
         <img
           src="./assets/map.png"
           alt="Mapa de domícilios com rede geral ou fossa ligada a rede %"
         />
-        <p>
-          Seja parte da mudança: Junte-se a nós na melhoria do abastecimento de
-          água e saneamento em sua comunidade. Relate problemas em tempo real,
-          contribua para soluções eficazes e transforme positivamente o ambiente
-          ao seu redor.
-        </p>
       </section>
       <section id="features" class="features">
-        <div class="card custom-card border-0">
-          <img src="./assets/dash.png" alt="Icone de dashboard" />
-          <h2>Relatórios</h2>
-          <p>
-            "Sistema BI especializado em denúncias do ODS 6, oferecendo análises
-            precisas para garantir a gestão sustentável de água e saneamento."
-          </p>
-        </div>
-        <div class="card custom-card border-0">
-          <img
-            src="./assets/location.png"
-            alt="Icone de ponto de localização"
-          />
-          <h2>Geolocalização</h2>
-          <p>
-            “Integração de geolocalização permite identificar com precisão o
-            local da denúncia, facilitando a ação rápida e efetiva.”
-          </p>
-        </div>
-        <div class="card custom-card border-0">
-          <img src="./assets/complaint.png" alt="Icone de dashboard" />
-          <h2>Denúncias</h2>
-          <p>
-            “Usuários podem reportar violações relacionadas à ODS 6, como má
-            qualidade da água, falta de saneamento, e práticas prejudiciais ao
-            meio ambiente.”
-          </p>
+        <div class="features-container">
+          <div class="card custom-card border-0">
+            <img src="./assets/dash.png" alt="Icone de dashboard" />
+            <h2>Relatórios</h2>
+            <p>
+              "Sistema BI especializado em denúncias do ODS 6, oferecendo
+              análises precisas para garantir a gestão sustentável de água e
+              saneamento."
+            </p>
+          </div>
+          <div class="card custom-card border-0">
+            <img
+              src="./assets/location.png"
+              alt="Icone de ponto de localização"
+            />
+            <h2>Geolocalização</h2>
+            <p>
+              “Integração de geolocalização permite identificar com precisão o
+              local da denúncia, facilitando a ação rápida e efetiva.”
+            </p>
+          </div>
+          <div class="card custom-card border-0">
+            <img src="./assets/complaint.png" alt="Icone de dashboard" />
+            <h2>Denúncias</h2>
+            <p>
+              “Usuários podem reportar violações relacionadas à ODS 6, como má
+              qualidade da água, falta de saneamento, e práticas prejudiciais ao
+              meio ambiente.”
+            </p>
+          </div>
         </div>
       </section>
     </main>

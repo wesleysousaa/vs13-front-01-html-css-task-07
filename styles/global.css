@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: var(--background);
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -21,13 +21,25 @@ body {
   display: none;
 }
 
-.custom-navbar {
+.custom-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
   display: flex;
   gap: 10px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .custom-nav {
   background-color: var(--primary);
+}
+
+.custom-nav a {
+  color: var(--white-text);
 }
 
 .custom-nav .custom-logo {
