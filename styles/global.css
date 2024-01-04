@@ -13,11 +13,33 @@
 }
 
 body {
-  background-color: var(--background);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.custom-menu-hamburguer {
+  display: none;
+}
+
+.custom-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .custom-nav {
   background-color: var(--primary);
+}
+
+.custom-nav a {
+  color: var(--white-text);
 }
 
 .custom-nav .custom-logo {
@@ -42,4 +64,14 @@ footer {
   padding: 2rem;
   text-align: center;
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.127);
+}
+
+@media (max-width: 610px) {
+  .custom-menu-hamburguer {
+    display: block;
+  }
+
+  .custom-navbar {
+    display: none;
+  }
 }
