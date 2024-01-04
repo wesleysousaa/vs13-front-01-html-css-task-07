@@ -20,6 +20,33 @@
   width: 40%;
 }
 
+.features {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 20px;
+}
+
+.features .custom-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: transparent;
+  color: var(--white-text);
+  margin-top: 1rem;
+}
+
+.features .custom-card h2,
+p {
+  text-align: center;
+}
+
+.features .custom-card img {
+  width: 150px;
+}
+
 @media (max-width: 1400px) {
   .introduction h1 {
     font-size: 2.5rem;
@@ -60,6 +87,18 @@
 
   .introduction a {
     font-size: 0.8rem;
+  }
+
+  .features .custom-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .features .custom-card p {
+    font-size: 0.9rem;
+  }
+
+  .features .custom-card img {
+    width: 120px;
   }
 }
 
@@ -137,21 +176,7 @@
   }
 
   .features {
-    background-color: var(--secondary);
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-  }
-
-  .features .custom-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    background-color: transparent;
-    color: var(--white-text);
-    margin-top: 1rem;
   }
 
   .features .custom-card h2,
