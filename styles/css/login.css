@@ -1,0 +1,49 @@
+main {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+main h1, main a {
+  color: #2ea06a;
+}
+main h2 {
+  margin-top: 10px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+main .form-container {
+  margin: 15px 0 10px 0;
+}
+main .form-container .custom-input {
+  width: 16rem;
+  padding: 0.4rem 1rem;
+}
+main .form-container .custom-input::placeholder {
+  color: rgb(178, 177, 177);
+}
+main a {
+  text-decoration: none;
+  font-weight: 500;
+}
+main button {
+  width: 16rem;
+  border: none;
+  background-color: #2ea06a;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=login.css.map */
