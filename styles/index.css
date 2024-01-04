@@ -1,4 +1,85 @@
-@media (max-width: 600px) {
+.introduction {
+  background-image: url("../assets/presentation-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  color: var(--white-text);
+  padding: 4% 0 0 6%;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+}
+
+.introduction p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.introduction h1, .introduction p {
+  width: 40%;
+}
+
+@media (max-width: 1400px) {
+  .introduction h1 {
+    font-size: 2.5rem;
+  }
+  
+  .introduction p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .introduction {
+    padding: 2% 0 0 4%;
+  }
+
+  .introduction h1 {
+    font-size: 2.2rem;
+  }
+  
+  .introduction p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .introduction {
+    padding: 0 0 0 3%;
+  }
+
+  .introduction h1 {
+    font-size: 1.8rem;
+  }
+  
+  .introduction p {
+    font-size: 1rem;
+    width: 45%;
+  }
+
+  .introduction a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .introduction h1 {
+    font-size: 1.5rem;
+  }
+  
+  .introduction p {
+    font-size: 0.8rem;
+    width: 45%;
+  }
+
+  .introduction a {
+    font-size: 0.8rem;
+
+  }
+}
+
+@media (max-width: 610px) {
   .introduction {
     background-image: url("../assets/presentation-mobile.png");
     background-size: cover;
@@ -9,14 +90,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   .introduction p {
     text-align: justify;
+    font-size: 1rem;
   }
 
-  .introduction h1,
-  p {
+  .introduction h1, .introduction p, p {
     width: 90%;
   }
 
