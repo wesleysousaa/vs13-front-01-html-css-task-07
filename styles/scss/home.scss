@@ -1,0 +1,120 @@
+$primary: #2ea06a;
+$secondary: #277340;
+$black-text: #000000;
+$white-text: #ffffff;
+$background: #f7f6f5; 
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hot-complaints{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 90%;
+  padding-bottom: 0.3rem;
+  &::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.3rem;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background-color: $secondary;
+    border-radius: 1rem;
+    margin: 2px;
+  }
+}
+
+.hot-complaints-cards{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+
+}
+
+.avatar-card{
+  width: 50px;
+  height: 50px;
+}
+
+.custom-card{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  flex-shrink: 0;
+  min-width: 20rem;
+  height: 20rem;
+  padding: 0.5rem 0;
+  
+  .people{
+    padding: 0 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    .head-people{
+      display: flex;
+    }
+    .people-desc{
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      span, p{
+        margin: 0;
+        padding: 0;
+      }
+      p{
+        font-weight: bold;
+      }
+      span{
+        color: $secondary;
+      }
+    }
+    width: 100%;
+    display: flex;
+    height: fit-content;
+  }
+}
+
+.img-card{
+  margin-top: 1rem;
+}
+
+.card-categories{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  width: 90%;
+  padding: 1rem;
+}
+
+.card-category{
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: $white-text;
+}
+section{
+  display: flex;
+  margin-top: 2rem;
+}
+.map-statistcs{
+  margin-top: 2rem;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map-statistcs h2{
+  width: 100%;
+}
+
+.map-container{
+  iframe{
+    width: 90vw;
+    height: 500px;
+    border-radius : 10px;
+  }
+}
