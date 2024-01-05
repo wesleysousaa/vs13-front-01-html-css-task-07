@@ -27,22 +27,22 @@ body {
 }
 
 .custom-nav {
-  background-color: var(--primary);
+  background-color: #2ea06a;
 }
 
 .custom-nav a {
-  color: var(--white-text);
+  color: #ffffff;
 }
 
 .custom-nav .custom-logo {
-  color: var(--white-text);
+  color: #ffffff;
   font-weight: bold;
   font-size: 2rem;
 }
 
 .custom-nav .custom-burger-buttom {
-  color: var(--white-text);
-  border-color: var(--white-text);
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .custom-burger-buttom i {
@@ -50,8 +50,8 @@ body {
 }
 
 footer {
-  background-color: var(--secondary);
-  color: var(--white-text);
+  background-color: #277340;
+  color: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.127);
   padding: 2rem;
   text-align: center;
