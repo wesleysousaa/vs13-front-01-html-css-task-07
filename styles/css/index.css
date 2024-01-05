@@ -15,6 +15,11 @@ main {
   justify-content: center;
 }
 
+.head-img {
+  display: flex;
+  width: 20%;
+}
+
 .introduction h1 {
   font-size: 3rem;
 }
@@ -171,6 +176,9 @@ p {
   .about .description {
     text-align: center;
   }
+  .head-img {
+    width: 40%;
+  }
 }
 @media (max-width: 840px) {
   .introduction p {
@@ -213,6 +221,9 @@ p {
     background-image: url("../../assets/presentation-mobile.png");
     text-align: center;
     padding: 0;
+  }
+  .head-img {
+    width: 60%;
   }
   .introduction .description {
     display: flex;
