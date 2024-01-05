@@ -16,7 +16,7 @@ main {
   height: 0.3rem;
 }
 .hot-complaints::-webkit-scrollbar-thumb {
-  background-color: #277340;
+  background-color: rgba(0, 0, 0, 0.3215686275);
   border-radius: 1rem;
   margin: 2px;
 }
@@ -40,6 +40,13 @@ main {
   min-width: 20rem;
   height: 20rem;
   padding: 0.5rem 0;
+  cursor: pointer;
+}
+.custom-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.custom-card .card-body {
+  padding: 0 1rem;
 }
 .custom-card .people {
   padding: 0 0.5rem;
@@ -57,7 +64,8 @@ main {
   display: flex;
   flex-direction: column;
 }
-.custom-card .people .people-desc span, .custom-card .people .people-desc p {
+.custom-card .people .people-desc span,
+.custom-card .people .people-desc p {
   margin: 0;
   padding: 0;
 }
@@ -92,6 +100,12 @@ section {
   margin-top: 2rem;
 }
 
+section .section-title {
+  color: rgba(0, 0, 0, 0.6392156863);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
 .map-statistcs {
   margin-top: 2rem;
   width: 90%;
@@ -100,8 +114,9 @@ section {
   flex-direction: column;
 }
 
-.map-statistcs h2 {
+.map-statistcs h3 {
   width: 100%;
+  text-align: start;
 }
 
 .map-container iframe {
