@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOTIFICA</title>
+    <meta
+      name="description"
+      content="NOFITICA - Denuncias de saneamento e abastecimento."
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/leaf.png" />
+    <meta
+      name="keywords"
+      content="denuncia, abastecimento de água, sanemaneto básico, ODS 6"
+    />
+    <meta name="author" content="Wesley Alencar, Lorenzo Panato" />
+    <link rel="stylesheet" href="../styles/css/global.css" />
+    <link rel="stylesheet" href="../styles/css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar custom-nav">
+        <div class="menu">
+          <a class="custom-logo" href="../index.html">NOTIFICA</a>
+          <nav class="custom-navbar" id="nav-light">
+            <a href="#" class="custom-navbar-link"
+              ><i class="bi bi-plus-circle"></i> Nova Denuncia</a
+            >
+            <a href="#" class="custom-navbar-link">
+              <i class="bi bi-person-circle"></i> Meu Perfil</a
+            >
+            <a href="../index.html" class="btn btn-outline-light"
+              ><i class="bi bi-box-arrow-right"></i> Sair</a
+            >
+          </nav>
+
+          <button
+            class="navbar-toggler bg-transparent border-0 text-white custom-menu-hamburguer"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="outline: none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                NOTIFICA
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    ><i class="bi bi-plus-circle"></i> Nova Denúncia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    ><i class="bi bi-person-circle"></i> Meu Perfil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="../index.html"
+                    ><i class="bi bi-box-arrow-right"></i> Sair</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hot-complaints" class="hot-complaints">
+        <h2>Denúncias em alta</h2>
+        <div class="hot-complaints-cards">
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+          <div class="card custom-card">
+            <div class="people">
+              <div class="head-people">
+                <img
+                  src="../assets/avatar.png"
+                  class="avatar-card"
+                  alt="Foto de André Fernandes"
+                />
+                <div class="people-desc">
+                  <p>André Fernandes</p>
+                  <span>56 Denúncias</span>
+                </div>
+              </div>
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+                  />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/card-img.jpeg"
+              class="img-card"
+              alt="Foto da denuncia"
+            />
+            <div class="card-categories">
+              <span class="card-category" style="background-color: #30a3e3">
+                <i class="bi bi-droplet-half"></i>
+                Abastecimento
+              </span>
+              <span class="card-category" style="background-color: #ce3030">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                Crítico
+              </span>
+            </div>
+            <div class="card-body">
+              <h3>Retorno em Santana</h3>
+              <p>
+                Finalmente a água voltou aqui no Bairro Santana, após 3 dias sem
+                uma gota.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="map-statistcs" class="map-statistcs">
+        <h2>Estatísticas no Mapa</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15841.53087278776!2d-35.71350418816471!3d-6.964098439102407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac3234c0d63aa5%3A0xe324089f03516f32!2sAreia%2C%20PB%2C%2058397-000!5e0!3m2!1spt-BR!2sbr!4v1704410439682!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>© Todos os direitos reservados.</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

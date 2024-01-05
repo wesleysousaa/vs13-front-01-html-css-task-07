@@ -14,8 +14,8 @@
       content="denuncia, abastecimento de água, sanemaneto básico, ODS 6"
     />
     <meta name="author" content="Wesley Alencar, Lorenzo Panato" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/css/global.css" />
+    <link rel="stylesheet" href="./styles/css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -31,12 +31,14 @@
     <header>
       <nav class="navbar custom-nav">
         <div class="menu">
-          <a class="navbar-brand custom-logo" href="#">NOTIFICA</a>
+          <a class="custom-logo" href="./index.html">NOTIFICA</a>
           <nav class="custom-navbar" id="nav-light">
-            <a href="#introduction" class="btn">Introdução</a>
-            <a href="#about" class="btn">Sobre a ODS 6</a>
-            <a href="#features" class="btn">Funcionalidades</a>
-            <a href="#" class="btn btn-outline-light">Acessar</a>
+            <a href="#introduction" class="custom-navbar-link">Introdução</a>
+            <a href="#about" class="custom-navbar-link">Sobre a ODS 6</a>
+            <a href="#features" class="custom-navbar-link">Funcionalidades</a>
+            <a href="./pages/login.html" class="btn btn-outline-light"
+              >Acessar</a
+            >
           </nav>
 
           <button
@@ -87,13 +89,24 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#introduction">Introdução</a>
+                  <a class="nav-link text-black" href="#introduction"
+                    >Introdução</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">Sobre a ODS 6</a>
+                  <a class="nav-link text-black" href="#about">Sobre a ODS 6</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#features">Funcionalidades</a>
+                  <a class="nav-link text-black" href="#features"
+                    >Funcionalidades</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn-outline-light"
+                    href="./pages/login.html"
+                    >Acessar</a
+                  >
                 </li>
               </ul>
             </div>
@@ -105,6 +118,11 @@
     <main>
       <section id="introduction" class="introduction">
         <div class="description">
+          <img
+            class="head-img"
+            src="./assets/head-img-peoples.png"
+            alt="Fotos de bonecos sobre natureza"
+          />
           <h1>Relate, Contribua, Transforme.</h1>
           <p>
             Seja parte da mudança: Junte-se a nós na melhoria do abastecimento

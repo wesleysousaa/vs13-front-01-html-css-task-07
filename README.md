@@ -1,7 +1,7 @@
 <h1 align="center">Documentação do projeto NOTIFICA</h1>
 
 <p align="center">
-  Nesse projeto, criemos o primeiro protótipo do projeto final e implementemos com HTML e CSS.<br/>
+  Nesse projeto, adicionemos novos protótipos do projeto final e implementemos com HTML e CSS.<br/>
 </p>
 
 ## 🚀 Tecnologias
@@ -19,13 +19,12 @@ Passo-a-passo:
    > Para isso, basta pegar o link do repo e colocar git clone atras, segue o exmplo:
 
 ```
-git clone https://github.com/wesleysousaa/vs13-front-01-html-css-task-06
+git clone https://github.com/wesleysousaa/vs13-front-01-html-css-task-07.git
 ```
 
 ## Prototipação da UI
 
 - Acesse clicando [aqui](https://www.figma.com/file/ycc6RDJ19paG7m9dRoSh4b/Desenvolvimento-do-Conceito-do-Sistema---Task-TIME-07?type=design&node-id=140-501&mode=design&t=LybBb3iw349NWURm-0)!
-
 
 ## 👥 Equipe
 
@@ -40,4 +39,4 @@ git clone https://github.com/wesleysousaa/vs13-front-01-html-css-task-06
 
 ## 💻 Sobre o Projeto
 
-Como já mencionei anteriormente, Nesse projeto, criemos o primeiro protótipo do projeto final e implementemos com HTML e CSS.
+Nesse projeto, adicionemos novos protótipos do projeto final e implementemos com HTML e CSS.
