@@ -1,3 +1,24 @@
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-navbar-link {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.custom-navbar-link:hover, .custom-logo:hover {
+  transform: scale(1.05);
+}
+
+.custom-logo {
+  color: #ffffff;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
