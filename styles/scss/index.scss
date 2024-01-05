@@ -116,12 +116,12 @@ main {
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
-    gap: 20px;
   }
   
   .features .features-container {
     display: flex;
     width: 90%;
+    gap: 40px;
   }
   
   .features .custom-card {
@@ -141,6 +141,11 @@ main {
   
   .features .custom-card img {
     width: 150px;
+  }
+
+  .features-container p {
+    max-width: 350px;
+    text-align: justify;
   }
   
   @media (max-width: 1600px) {
