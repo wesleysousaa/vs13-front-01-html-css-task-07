@@ -64,6 +64,10 @@ main .form-container button {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  transition: 0.2s;
+}
+main .form-container button:hover {
+  opacity: 0.9;
 }
 @media screen and (max-width: 1700px) {
   main .form-container button {

@@ -22,6 +22,12 @@ Passo-a-passo:
 git clone https://github.com/wesleysousaa/vs13-front-01-html-css-task-07.git
 ```
 
+2. Ou pode acessar diretamente por esse link:
+
+```
+https://notifica-nine.vercel.app
+```
+
 ## Prototipação da UI
 
 - Acesse clicando [aqui](https://www.figma.com/file/ycc6RDJ19paG7m9dRoSh4b/Desenvolvimento-do-Conceito-do-Sistema---Task-TIME-07?type=design&node-id=140-501&mode=design&t=LybBb3iw349NWURm-0)!
